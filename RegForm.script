@@ -1,0 +1,30 @@
+
+
+function check(){
+
+    let un=document.getElementById("name1").value;
+
+    let mail=document.getElementById("email").value;
+
+    let pass1= document.getElementById("pass1").value;
+    
+    let pass2 = document.getElementById("pass2").value;
+    
+    console.log(pass1);
+    
+    if(pass1!==pass2){
+
+    document.getElementById("print1").innerHTML="Passwords don't match";
+
+    }
+    else if(pass1==pass2)
+    {
+    document.getElementById("print1").innerHTML="Passwords match";
+    document.getElementById("print2").innerHTML=un;
+    document.getElementById("print3").innerHTML=mail;
+    document.getElementById("print4").innerHTML=pass1;
+    }
+
+}
+    
+    
